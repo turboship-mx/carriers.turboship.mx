@@ -1,6 +1,9 @@
-import { AlertTriangle } from 'lucide-react';
+---
+title: Mercado Pago
+sidebar_position: 1
+---
 
-# Mercado Pago
+import { AlertTriangle } from 'lucide-react';
 
 Esta guía describe cómo conectar Mercado Pago con Turboship para automatizar los cobros a tus clientes y la acreditación de su saldo. Mercado Pago aplica comisiones que varían según el método de pago elegido; consulta el detalle aquí: https://www.mercadopago.com.mx/herramientas-para-vender/check-out#benefits-checkout.
 
@@ -12,7 +15,7 @@ Si aún no tienes cuenta, regístrate aquí: https://www.mercadopago.com.mx/hub/
 ![Cuenta de Mercado Pago tipo empresa](mercadopago-cuenta-empresa-v2.png)
 
 ## 1) Crea una aplicación
-Acceda al portal de desarrolladores utilizando el siguiente link para crear una nueva aplicación.
+Accede al portal de desarrolladores utilizando el siguiente link para crear una nueva aplicación.
 
 Enlace directo: https://www.mercadopago.com.mx/developers/panel/app/create-app
 
@@ -46,7 +49,7 @@ Ya creada la app, verás el panel con sus detalles.
 ![Detalle de la aplicación](app-details-page.png)
 
 ## 7) Activa credenciales de producción
-En la barra lateral, haz click en **Credenciales de producción**. En industria selecciona **Otros**, coloca la URL de tu plataforma de envíos, acepta los términos y condiciones y activa las credenciales de producción.
+En la barra lateral, haz clic en **Credenciales de producción**. En industria selecciona **Otros**, coloca la URL de tu plataforma de envíos, acepta los términos y condiciones y activa las credenciales de producción.
 
 ![Activar credenciales de producción](activate-production-credentials.png)
 

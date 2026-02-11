@@ -2,37 +2,26 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: 'Turboship Carriers',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Centro de documentacion y changelog para carriers de Turboship.',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://carriers.turboship.mx',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'turboship-mx', // Usually your GitHub org/user name.
-  projectName: 'carriers.turboship.mx', // Usually your repo name.
+  organizationName: 'turboship-mx',
+  projectName: 'carriers.turboship.mx',
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -41,22 +30,19 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          routeBasePath: 'newsletter',
+          blogTitle: 'Newsletter Carriers',
+          blogDescription:
+            'Actualizaciones de producto, integraciones y operacion para carriers Turboship.',
+          blogSidebarTitle: 'Changelog reciente',
+          blogSidebarCount: 10,
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -69,76 +55,75 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/turboship-social.png',
     colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'Turboship Carriers',
       logo: {
         alt: 'Turboship Carriers Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-light-mode.svg',
+        srcDark: 'img/logo-dark-mode.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentacion',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/newsletter', label: 'Newsletter', position: 'left'},
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Portal',
           items: [
+            {label: 'Inicio', to: '/'},
             {
-              label: 'Tutorial',
+              label: 'Documentacion',
               to: '/docs/intro',
             },
+            {label: 'Newsletter', to: '/newsletter'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Secciones',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Introduccion',
+              to: '/docs/intro',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Plataforma',
+              to: '/docs/plataforma/introduccion',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Mercado Pago',
+              to: '/docs/integraciones/mercadopago',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Legal',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Privacidad',
+              href: 'https://carriers.turboship.mx/privacidad',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Terminos',
+              href: 'https://carriers.turboship.mx/terminos',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Turboship.`,
     },
     prism: {
       theme: prismThemes.github,

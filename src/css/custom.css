@@ -1,30 +1,83 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2c7be5;
-  --ifm-color-primary-dark: #1967cf;
-  --ifm-color-primary-darker: #175ebd;
-  --ifm-color-primary-darkest: #134c98;
-  --ifm-color-primary-light: #5092e9;
-  --ifm-color-primary-lighter: #629dec;
-  --ifm-color-primary-lightest: #87b4f0;
+  --ifm-color-primary: #0d2aa8;
+  --ifm-color-primary-dark: #0b258f;
+  --ifm-color-primary-darker: #0a2286;
+  --ifm-color-primary-darkest: #081b6d;
+  --ifm-color-primary-light: #2243ce;
+  --ifm-color-primary-lighter: #2f50d6;
+  --ifm-color-primary-lightest: #5d77e1;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.9);
+  --ifm-background-color: #f6f8ff;
+  --ifm-heading-color: #111625;
+  --ifm-font-family-base: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --ifm-font-family-monospace: 'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  --ifm-global-shadow-lw: 0 10px 22px rgba(13, 42, 168, 0.1);
+  --ifm-heading-font-family: 'Sora', 'Plus Jakarta Sans', sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(13, 42, 168, 0.08);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #5092e9;
-  --ifm-color-primary-dark: #2c7be4;
-  --ifm-color-primary-darker: #1c70e0;
-  --ifm-color-primary-darkest: #185ebb;
-  --ifm-color-primary-light: #74a9ee;
-  --ifm-color-primary-lighter: #86b4f0;
-  --ifm-color-primary-lightest: #abcaf4;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #8ea2ff;
+  --ifm-color-primary-dark: #7790ff;
+  --ifm-color-primary-darker: #6c88ff;
+  --ifm-color-primary-darkest: #4d6dff;
+  --ifm-color-primary-light: #a5b5ff;
+  --ifm-color-primary-lighter: #b0beff;
+  --ifm-color-primary-lightest: #d2d9ff;
+  --ifm-navbar-background-color: rgba(13, 16, 29, 0.82);
+  --ifm-background-color: #0d111f;
+  --ifm-heading-color: #edf0ff;
+  --docusaurus-highlighted-code-line-bg: rgba(142, 162, 255, 0.2);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(13, 42, 168, 0.09), transparent 35%),
+    radial-gradient(circle at 85% 4%, rgba(128, 149, 250, 0.13), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(246, 248, 255, 0.9));
+}
+
+[data-theme='dark'] body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(69, 91, 205, 0.3), transparent 40%),
+    radial-gradient(circle at 85% 4%, rgba(80, 104, 223, 0.23), transparent 35%),
+    linear-gradient(180deg, #0d111f, #0b1020);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ifm-heading-font-family);
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom-color: var(--ifm-color-emphasis-300);
+}
+
+.navbar__logo img {
+  height: 1.9rem;
+}
+
+.button {
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.pagination-nav__link,
+.card {
+  border-radius: 1rem;
 }

@@ -1,22 +1,20 @@
-# Website
+# Portal Carriers Turboship
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Sitio de documentacion y newsletter (changelog) para carriers y white labels de Turboship.
 
-This repo uses Bun as the package manager.
+Este repo usa Bun como package manager.
 
-## Installation
+## Instalacion
 
 ```bash
 bun install
 ```
 
-## Local Development
+## Desarrollo local
 
 ```bash
 bun start
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Build
 
@@ -24,20 +22,26 @@ This command starts a local development server and opens up a browser window. Mo
 bun run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Estructura de contenido
 
-## Deployment
+- Documentacion: `docs/`
+- Newsletter/changelog: `blog/` (publica en `/newsletter`)
+- Home: `src/pages/index.tsx`
 
-Using SSH:
+## Publicar una nueva guia
 
-```bash
-USE_SSH=true bun run deploy
-```
+1. Crea el archivo Markdown dentro de `docs/`.
+2. Si aplica, agrega categoria o agrupa por modulo.
+3. Verifica enlaces internos y rutas.
 
-Not using SSH:
+## Publicar una nueva entrada de changelog
 
-```bash
-GIT_USER=<Your GitHub username> bun run deploy
-```
+1. Crea un archivo en `blog/` con formato `YYYY-MM-DD-titulo.md`.
+2. Usa frontmatter con `title`, `authors`, `tags`.
+3. Incluye resumen corto y `<!-- truncate -->`.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Checklist antes de merge
+
+1. `bun run build` pasa sin errores.
+2. No hay placeholders visibles en home ni docs.
+3. Enlaces clave funcionan: `/`, `/docs/intro`, `/docs/plataforma/introduccion`, `/docs/integraciones/mercadopago`, `/newsletter`.

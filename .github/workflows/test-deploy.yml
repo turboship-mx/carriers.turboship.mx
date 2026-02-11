@@ -1,4 +1,4 @@
-name: Test deployment
+name: Test portal deployment
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-deploy:
-    name: Test Docusaurus build
+    name: Test portal build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

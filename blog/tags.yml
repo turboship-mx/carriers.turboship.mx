@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+changelog:
+  label: Changelog
+  permalink: /newsletter/tags/changelog
+  description: Actualizaciones oficiales de producto para carriers.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+producto:
+  label: Producto
+  permalink: /newsletter/tags/producto
+  description: Cambios de producto y experiencia de uso.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+integraciones:
+  label: Integraciones
+  permalink: /newsletter/tags/integraciones
+  description: Novedades y ajustes de integraciones.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+operacion:
+  label: Operacion
+  permalink: /newsletter/tags/operacion
+  description: Cambios operativos para equipos carrier.

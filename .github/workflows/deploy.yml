@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy portal to GitHub Pages
 
 on:
   push:
@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build Docusaurus
+    name: Build portal
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
