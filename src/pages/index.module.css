@@ -10,8 +10,7 @@
 
 .heroBackdrop {
   position: absolute;
-  inset: -4rem -10rem auto;
-  height: 28rem;
+  inset: -4rem -10rem 0;
   background:
     radial-gradient(circle at 12% 20%, rgba(13, 42, 168, 0.2), transparent 46%),
     radial-gradient(circle at 82% 12%, rgba(128, 149, 250, 0.18), transparent 45%),
@@ -73,7 +72,7 @@
 }
 
 .sections {
-  padding: 0.5rem 0 1.5rem;
+  padding: 4.5rem 0 1.5rem;
 }
 
 .cardGrid {
@@ -152,69 +151,30 @@
   margin: 1.2rem 0 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
-  gap: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
 }
 
-.carrierItem {
-  display: grid;
-  place-items: center;
-  min-height: 5.1rem;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 0.95rem;
-  background-color: rgba(255, 255, 255, 0.9);
+.carrierGrid li {
+  margin: 0;
 }
 
-[data-theme='dark'] .carrierItem {
-  border-color: var(--ifm-color-emphasis-300);
-  background-color: rgba(18, 22, 36, 0.86);
-}
-
-.carrierItem img {
-  max-width: 78px;
-  width: 100%;
+.carrierLogo {
+  width: clamp(4.4rem, 9vw, 5.3rem);
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 0.75rem;
+  object-fit: contain;
   opacity: 0.9;
   filter: grayscale(1);
   transition: transform 0.22s ease, filter 0.22s ease, opacity 0.22s ease;
 }
 
-.carrierItem:hover img {
+.carrierLogo:hover {
   filter: grayscale(0);
   opacity: 1;
   transform: translateY(-2px);
-}
-
-.quickStart {
-  padding-top: 1rem;
-}
-
-.quickStartCard {
-  border-radius: 1.1rem;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  background: linear-gradient(135deg, rgba(13, 42, 168, 0.07), rgba(128, 149, 250, 0.14));
-  padding: 1.35rem;
-}
-
-[data-theme='dark'] .quickStartCard {
-  border-color: var(--ifm-color-emphasis-300);
-  background: linear-gradient(135deg, rgba(13, 42, 168, 0.17), rgba(128, 149, 250, 0.12));
-}
-
-.quickStartTitle {
-  margin: 0;
-  font-size: 1.25rem;
-}
-
-.quickStartList {
-  margin: 0.85rem 0 0;
-  padding-left: 1.1rem;
-  display: grid;
-  gap: 0.45rem;
-}
-
-.quickStartList a {
-  font-weight: 600;
 }
 
 @keyframes fadeSlideIn {
@@ -232,6 +192,10 @@
 @media (max-width: 996px) {
   .hero {
     padding-top: 4.5rem;
+  }
+
+  .sections {
+    padding-top: 3.5rem;
   }
 
   .heroSubtitle {

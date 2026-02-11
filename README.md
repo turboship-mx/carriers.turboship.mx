@@ -1,6 +1,6 @@
 # Portal Carriers Turboship
 
-Sitio de documentacion y newsletter (changelog) para carriers y white labels de Turboship.
+Sitio de documentacion y newsletter para carriers y white labels de Turboship.
 
 Este repo usa Bun como package manager.
 
@@ -25,7 +25,7 @@ bun run build
 ## Estructura de contenido
 
 - Documentacion: `docs/`
-- Newsletter/changelog: `blog/` (publica en `/newsletter`)
+- Newsletter: `blog/` (publica en `/newsletter`)
 - Home: `src/pages/index.tsx`
 
 ## Publicar una nueva guia
@@ -34,7 +34,7 @@ bun run build
 2. Si aplica, agrega categoria o agrupa por modulo.
 3. Verifica enlaces internos y rutas.
 
-## Publicar una nueva entrada de changelog
+## Publicar una nueva entrada de newsletter
 
 1. Crea un archivo en `blog/` con formato `YYYY-MM-DD-titulo.md`.
 2. Usa frontmatter con `title`, `authors`, `tags`.

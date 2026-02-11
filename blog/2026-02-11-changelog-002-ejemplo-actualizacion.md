@@ -1,8 +1,8 @@
 ---
-slug: changelog-002-ejemplo-actualizacion
-title: 'Changelog #002: Ejemplo de actualizacion de plataforma'
+slug: newsletter-002-ejemplo-actualizacion
+title: 'Newsletter #002: Ejemplo de actualizacion de plataforma'
 authors: [equipo-turboship]
-tags: [changelog, integraciones, producto]
+tags: [newsletter, integraciones, producto]
 ---
 
 Ejemplo de entrada para mostrar como documentar una actualizacion de plataforma en este portal.

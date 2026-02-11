@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Turboship Carriers',
-  tagline: 'Centro de documentacion y changelog para carriers de Turboship.',
+  tagline: 'Centro de documentacion y newsletter para carriers de Turboship.',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -36,7 +36,7 @@ const config: Config = {
           blogTitle: 'Newsletter Carriers',
           blogDescription:
             'Actualizaciones de producto, integraciones y operacion para carriers Turboship.',
-          blogSidebarTitle: 'Changelog reciente',
+          blogSidebarTitle: 'Newsletter reciente',
           blogSidebarCount: 10,
           showReadingTime: true,
           feedOptions: {
@@ -62,19 +62,13 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Turboship Carriers',
       logo: {
         alt: 'Turboship Carriers Logo',
         src: 'img/logo-light-mode.svg',
         srcDark: 'img/logo-dark-mode.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'docsSidebar',
-          position: 'left',
-          label: 'Documentacion',
-        },
+        {to: '/docs/intro', label: 'Documentacion', position: 'left'},
         {to: '/newsletter', label: 'Newsletter', position: 'left'},
       ],
     },

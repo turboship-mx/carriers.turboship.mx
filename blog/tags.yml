@@ -1,6 +1,6 @@
-changelog:
-  label: Changelog
-  permalink: /newsletter/tags/changelog
+newsletter:
+  label: Newsletter
+  permalink: /newsletter/tags/newsletter
   description: Actualizaciones oficiales de producto para carriers.
 
 producto:

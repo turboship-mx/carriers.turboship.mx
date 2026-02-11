@@ -11,7 +11,7 @@ Este sitio es el centro de documentacion para carriers y white labels que operan
 
 - Guias de integracion para activar modulos clave.
 - Estructura de referencia para la plataforma carrier.
-- Changelog de producto en la seccion [Newsletter](/newsletter).
+- Newsletter de producto en la seccion [Newsletter](/newsletter).
 
 ## Empezar rapido
 

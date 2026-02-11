@@ -1,15 +1,15 @@
 ---
-slug: changelog-001-bienvenida
-title: 'Changelog #001: Bienvenida al Newsletter de Carriers'
+slug: newsletter-001-bienvenida
+title: 'Newsletter #001: Bienvenida al Newsletter de Carriers'
 authors: [equipo-turboship]
-tags: [changelog, producto, operacion]
+tags: [newsletter, producto, operacion]
 ---
 
 Este es el primer post del Newsletter de carriers. A partir de aqui se publicaran cambios de producto, mejoras operativas y ajustes relevantes para equipos white label.
 
 <!-- truncate -->
 
-## Objetivo del changelog
+## Objetivo del newsletter
 
 - Comunicar cambios de forma clara y breve.
 - Dar contexto de impacto para equipos operativos.
