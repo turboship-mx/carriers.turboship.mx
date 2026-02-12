@@ -43,7 +43,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },

@@ -2,7 +2,6 @@
 slug: newsletter-enero-2026
 title: 'Newsletter Enero 2026'
 authors: [equipo-turboship]
-tags: [newsletter, producto, operacion, integraciones]
 ---
 
 Gracias por seguir creciendo con Turboship. En enero nos enfocamos en ayudarte a vender con más confianza, operar con menos fricción y dar mejor experiencia a tus clientes finales.
@@ -11,7 +10,7 @@ Gracias por seguir creciendo con Turboship. En enero nos enfocamos en ayudarte a
 
 ## Lo más importante de enero
 
-### 1) Ya puedes cobrar comisión de servicio en recargas
+### Ya puedes cobrar comisión de servicio en recargas
 
 Ahora puedes aplicar una comisión de servicio en cada recarga para amortiguar las comisiones que cobra MercadoPago.
 
@@ -20,7 +19,7 @@ Ahora puedes aplicar una comisión de servicio en cada recarga para amortiguar l
 - Proteges tu margen sin frenar las recargas de tus clientes.
 - Tu equipo define una política clara de recarga desde administración.
 
-### 2) Nuevas opciones de paquetería para cotizar y enviar
+### Nuevas opciones de paquetería para cotizar y enviar
 
 En enero incorporamos J&T Express, FedEx Freight y mejoras en Estafeta APIM PRO para darte más alternativas de envío.
 
@@ -28,7 +27,7 @@ En enero incorporamos J&T Express, FedEx Freight y mejoras en Estafeta APIM PRO 
 - Más opciones para elegir tarifa, cobertura y tipo de servicio.
 - Mejor capacidad para encontrar una opción acorde a tu operación.
 
-### 3) Nuevo módulo de recolecciones en la plataforma
+### Nuevo módulo de recolecciones en la plataforma
 
 Lanzamos un módulo para operar de forma ordenada cada solicitud de recolección que recibes como plataforma.
 
@@ -39,7 +38,7 @@ Hoy el proceso sigue siendo manual, pero ya queda centralizado para mantener con
 - Operas con más orden y menos riesgo de omisiones.
 - Lo que sigue: conectar este módulo con los sistemas de recolección de cada proveedor para automatizar el flujo.
 
-### 4) Avance: nuevo módulo de WhatsApp Business
+### Avance: nuevo módulo de WhatsApp Business
 
 Estamos desarrollando un nuevo módulo para que cada negocio de tu plataforma conecte su cuenta de Meta Business y envíe notificaciones automáticas por WhatsApp sobre el estatus de envío a sus clientes.
 
@@ -52,7 +51,7 @@ Sigue en implementación, pero estará disponible muy pronto para nuestros carri
 - Tu equipo ahorra tiempo operativo en mensajes de estatus.
 - Tu marca tendrá una experiencia poscompra más consistente.
 
-### 5) Plataforma más estable para volumen operativo
+### Plataforma más estable para volumen operativo
 
 Realizamos mejoras internas enfocadas en consistencia de cotización y continuidad del servicio.
 
